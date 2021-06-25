@@ -1,0 +1,139 @@
+body {
+	background-color: rgb(240,240,240);
+}
+.heading {
+	text-align: center;
+}
+.heading2 {
+	text-align: center;
+	color: grey;
+	line-height: 1.5em;
+    height: 4.5em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;  /* prevents extra lines from being visible */
+}
+.card {
+  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: table-cell;
+}
+.card2 {
+
+	display: flex ;width:90%;
+	background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+.imageStyle {
+	width: 100%;
+	
+}
+.column {
+  float: left;
+  width:40%;
+  
+  padding:10px;
+}
+.bigComp {
+	text-align: center;
+}
+.cards{
+	display: table; /* Make the container element behave like a table */
+    width: 60%;
+	align-items: center;
+	margin-left: 10%;
+}
+.quiz {
+	position: absolute;
+	top:-1%;
+	right: 2%;
+	background-color: green;
+	opacity: 60%;
+	color: white;
+	font-size: 14px;
+	padding: 5px;
+}
+.dayAgo{
+	position: absolute;
+	bottom:-4%;
+	left: 2%;
+	background-color: white;
+	opacity: 60%;
+	color: black;
+	font-size: 14px;
+	padding: 5px;
+}
+.compDisplay{
+	display:flex;
+}
+.Comp {
+	display: block;background-color: white;align-items: center;text-align: center;width: 90%;
+}
+.smallComp {
+	margin-bottom: -15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.smallComp2:hover{
+	background-color: lightgrey;
+}
+.smallComp:hover{
+	background-color: lightgrey;
+}
+.buttonStyle {
+	background-color: rgb(92,173,92);
+	color:white;
+	padding-left: : 30px;
+	padding-right: : : 30px;
+	font-size: 30px;
+	border-radius: 5px;
+}
+.buttonStyle:hover {
+	background-color: rgb(72,143,72);
+}
+@media screen and (max-width: 1000px) {
+	.cards{
+	
+    width: 90%;
+	align-items: center;
+	
+}
+	.compDisplay{
+  	display: block;
+    margin-bottom: 20px;
+  }
+  .bigComp {
+		margin-left: 10%;
+	}
+	}
+
+@media screen and (max-width: 600px) {
+	.cards{
+	
+    width: 90%;
+	align-items: center;
+	
+}
+  .column {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .compDisplay{
+  	display: block;
+    margin-bottom: 20px;
+  }
+  .bigComp {
+		margin-left: 10%;
+	}
+}
